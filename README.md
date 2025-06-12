@@ -1,3 +1,7 @@
+<a href="https://www.buymeacoffee.com/yourusername" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="200" />
+</a>
+
 # decision_tree_from_scratch
 Repo with a tutorial that tells you how to build a decision tree from scratch
 
