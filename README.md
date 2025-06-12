@@ -17,3 +17,26 @@ and an outcome for each path.
 - Its very easy (and very bad) to build decision trees that are overfitted to the training data, and that don't generalize well to unseen data.
 - We can divide decision trees into classification trees (produce categorical outputs) and regression trees (which produces numeric output).
 - For the explanation, we'll focus on classification trees, and we'll work through the ID3 algorithm for learning a decision tree from a set of labeled data, this will help us understand how decision trees work. And we'll restrict the problem to binary ones.
+
+## Entropy
+
+In order to build decision tree, we will need to decide what question to ask 
+and in what order.
+At each stage of the tree there are some possibilities we've eliminated and
+some that we haven't.
+Every possible question partitions the remaining possibilities according to
+their answer.
+
+Ideally, we'd like to choose questions whose answers give a lot of information 
+about what our tree should predict. 
+If there's a single yes/no question for which "yes" answers always correspond 
+to True outputs and "no" answers to False outputs, this would be a awesome 
+question to pick.
+Conversely, a yes/no question for which neither answer gives you much information 
+about what the prediction should be is probably not a good choice.
+
+We capture this notion of "how much information" with entropy. And it is used
+to represent uncertainty associated with data. 
+
+
+
